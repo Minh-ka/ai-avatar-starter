@@ -60,7 +60,7 @@ const Home = () => {
   const generateAction = async () => {
     console.log('Generating...');
 
-    const input = inputConceptArt + inputCartoon + inputFantasy + ", " + inputArtist + ", " + inputMedium + ", " + inputVibe + ", " + inputDescription;
+    const input = "A man named Minhka" + inputConceptArt + inputCartoon + inputFantasy + ", " + inputArtist + ", " + inputMedium + ", " + inputVibe + ", " + inputDescription;
     
     // Add this check to make sure there is no double click
     if (isGenerating && retry === 0) return;
@@ -215,7 +215,7 @@ const Home = () => {
                 </div>
               </a>
             </div>
-            <div>{isGenerating && <p classname="notification">Wait 1-3 minutes to get a amazing picture</p>}</div>
+            <div>{isGenerating && <p classname="notification">Wait 1-3 minutes to get a amazing picture (only first picture)</p>}</div>
           </div>
         </div>
         {/* Add output container */}
